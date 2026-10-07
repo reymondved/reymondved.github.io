@@ -6,7 +6,7 @@
 <title>Projects: Mon</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,23 +24,43 @@
   <main>
     <section>
       <h2 class="page-title">Projects</h2>
-      <p>This site is my first project, built step by step with Claude.</p>
+      <p>I'm building my foundations one project at a time, starting with this site.</p>
     </section>
 
-    <section>
-      <h2>This website</h2>
-      <ul>
-        <li>Level 1: first page</li>
-        <li>Level 2: changed it with plain instructions</li>
-        <li>Level 3: understood HTML, CSS, and JavaScript</li>
-        <li>Level 4: found and fixed bugs</li>
-        <li>Level 5: built and extended a multi-page site</li>
+    <section class="project">
+      <h2>Personal portfolio website</h2>
+      <p>A multi-page site with Home, About, Projects, and Contact pages. I built it with AI assistance while learning web development, and I can explain how each part works.</p>
+      <p class="day">Built with HTML, CSS, and JavaScript. Hosted on GitHub Pages.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/reymondved/reymondved.github.io" target="_blank" rel="noopener">View the code on GitHub</a>
+      </div>
+
+      <h3>What it does</h3>
+      <ul class="plain-list">
+        <li>Four linked pages that share the same menu and design</li>
+        <li>Fits phone and desktop screens</li>
+        <li>Switches between light and dark colors to match the device</li>
+        <li>Uses JavaScript for a day counter that counts the days I worked on the site</li>
       </ul>
+
+      <h3>What I fixed and learned</h3>
+      <ul class="plain-list">
+        <li>A list I pasted ran together into one paragraph, because HTML ignores line breaks. A list element (<code>&lt;ul&gt;</code>) fixed it.</li>
+        <li>A menu link appeared outside the menu because it sat outside the <code>&lt;nav&gt;</code> tag. Tags work like boxes, so where something goes decides how it looks.</li>
+        <li>Names have to match exactly. A one-letter difference between an HTML id and the JavaScript that looks for it quietly stops the code from working.</li>
+      </ul>
+
+      <h3>How I built it</h3>
+      <ol class="plain-list">
+        <li><strong>First page.</strong> Wrote a one-page personal site with HTML for the content and CSS for the style.</li>
+        <li><strong>Changes by instruction.</strong> Practiced describing exactly what I wanted changed, such as colors, wording, and layout.</li>
+        <li><strong>Reading the code.</strong> Learned what HTML, CSS, and JavaScript each control on the page.</li>
+        <li><strong>Debugging.</strong> Practiced finding and fixing bugs: a missing semicolon, a mismatched name, and a misspelled CSS variable.</li>
+        <li><strong>Multi-page site.</strong> Turned one page into four, and added the Projects page and its menu link myself.</li>
+        <li><strong>Going live.</strong> Split the site into separate files, put them in a GitHub repository, and published it with GitHub Pages.</li>
+      </ol>
     </section>
   </main>
 
-  <footer>
-    Built with Claude, one level at a time.
-  </footer>
 </body>
 </html>

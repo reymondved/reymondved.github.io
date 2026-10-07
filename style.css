@@ -146,6 +146,7 @@ h2.page-title {
 }
 .track h3 { font-size: 1.25rem; font-weight: 800; }
 .track p { margin: 0.25rem 0 0; max-width: 32rem; }
+.track .quote { font-style: italic; color: var(--muted); }
 .track.heart { border-left-color: var(--heart); }
 .track.mind  { border-left-color: var(--mind); }
 .track.body  { border-left-color: var(--body); }
@@ -169,34 +170,19 @@ h2.page-title {
 .contact-list .label { display: block; color: var(--muted); font-size: 1rem; }
 .contact-list a { font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif; font-weight: 800; font-size: 1.35rem; word-break: break-word; }
 
-.levels {
-  display: flex;
-  gap: 0.35rem;
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0 0.75rem;
-  align-items: center;
-}
-.levels li { flex: 1; height: 0.7rem; border-radius: 999px; background: var(--track-empty); }
-.levels li.done { background: var(--mind); }
-.levels .more {
-  flex: 0 0 auto;
-  height: auto;
-  background: none;
-  font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 1.5rem;
-  line-height: 1;
-  color: var(--muted);
-  padding-left: 0.25rem;
-}
-.levels-note { color: var(--muted); margin: 0; }
 
-footer {
-  max-width: 42rem;
-  margin: 0 auto;
-  padding: 1.25rem 1.5rem 3rem;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 1rem;
+
+.day + .day { margin-top: 0.75rem; }
+
+/* Projects page */
+.project h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 2.5rem 0 0.75rem;
+}
+.plain-list { max-width: 34rem; padding-left: 1.25rem; margin: 0; }
+.plain-list li { margin-bottom: 0.6rem; }
+code {
+  font-family: ui-monospace, Consolas, "Courier New", monospace;
+  font-size: 0.9em;
 }
