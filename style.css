@@ -89,7 +89,7 @@ h1, h2, h3 { margin: 0; }
   border-bottom: 3px solid transparent;
 }
 .site-nav a.link:hover { color: var(--ink); }
-.site-nav a.link[aria-current="page"] {
+.site-nav a.link[aria-current] {
   color: var(--ink);
   border-bottom-color: var(--mind);
 }
@@ -132,7 +132,8 @@ h2 {
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
 }
-h2.page-title {
+.page-title {
+  margin-left: 0;
   font-size: clamp(2.5rem, 9vw, 4rem);
   line-height: 1;
   letter-spacing: -0.03em;
@@ -174,15 +175,62 @@ h2.page-title {
 
 .day + .day { margin-top: 0.75rem; }
 
-/* Projects page */
-.project h3 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  margin: 2.5rem 0 0.75rem;
-}
+/* Projects pages */
 .plain-list { max-width: 34rem; padding-left: 1.25rem; margin: 0; }
 .plain-list li { margin-bottom: 0.6rem; }
 code {
   font-family: ui-monospace, Consolas, "Courier New", monospace;
   font-size: 0.9em;
+}
+
+section.detail { margin-top: 3rem; }
+
+.breadcrumb {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.breadcrumb a { color: inherit; }
+.breadcrumb [aria-current="page"] { color: var(--ink); }
+
+.project-card {
+  display: block;
+  text-decoration: none;
+  border-left: 6px solid var(--mind);
+  padding: 0.25rem 0 0.25rem 1.25rem;
+}
+.project-card .label { display: block; color: var(--muted); font-size: 1rem; }
+.project-card h2 { margin: 0.1rem 0 0.5rem; }
+.project-card p { margin: 0 0 0.75rem; max-width: 32rem; }
+.project-card .more {
+  font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+.project-card:hover h2 { text-decoration: underline; text-underline-offset: 0.3rem; }
+
+
+/* The first block under the breadcrumb sits close to it */
+.breadcrumb + section { margin-top: 0; }
+
+/* Skills list */
+.skills { margin: 0; max-width: 34rem; }
+.skills div {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 0.25rem 1rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--line);
+}
+.skills div:last-child { border-bottom: 1px solid var(--line); }
+.skills dt { font-family: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif; font-weight: 800; }
+.skills dd { margin: 0; }
+
+/* Small screens: the name gets its own row, the menu sits below it */
+@media (max-width: 640px) {
+  .site-nav { position: static; }
+  .site-nav .inner { padding-left: 1rem; padding-right: 1rem; gap: 0.5rem 1rem; }
+  .brand { flex-basis: 100%; font-size: 1.1rem; }
+  .site-nav a.link { font-size: 1rem; }
 }
