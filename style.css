@@ -102,10 +102,10 @@ main {
 
 /* The one memorable thing: the name, set very large */
 h1 {
-  font-size: clamp(6.5rem, 30vw, 15rem);
+  font-size: clamp(3.25rem, 15vw, 6.5rem);
   font-weight: 800;
-  line-height: 0.82;
-  letter-spacing: -0.045em;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
   margin-left: -0.04em;
 }
 
