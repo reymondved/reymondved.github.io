@@ -48,7 +48,7 @@ body {
 }
 
 a { color: inherit; }
-a:focus-visible, button:focus-visible {
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
   outline: 3px solid var(--mind);
   outline-offset: 3px;
 }
@@ -234,3 +234,5 @@ section.detail { margin-top: 3rem; }
   .brand { flex-basis: 100%; font-size: 1.1rem; }
   .site-nav a.link { font-size: 1rem; }
 }
+
+.project-card.heart { border-left-color: var(--heart); }

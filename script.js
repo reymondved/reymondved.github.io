@@ -7,7 +7,8 @@
 //   - If I add the same date twice, it still counts as one day.
 var DAYS_I_SHOWED_UP = [
   "2026-10-03",
-  "2026-10-07"
+  "2026-10-07",
+  "2026-10-08"
 ];
 
 try {

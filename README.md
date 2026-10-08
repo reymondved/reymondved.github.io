@@ -14,11 +14,13 @@ A multi-page personal site with Home, About, Projects, and Contact pages. I buil
 - Four linked pages that share the same menu and design
 - Fits phone and desktop screens
 - Switches between light and dark colors to match the device
+- A Projects section: Project 1 is this site, and Project 2 is an OJT application tracker that lives in its own repository (https://github.com/reymondved/ojt-tracker)
 - Day counter on the Home page that counts the days I worked on the site (the list of days is in `script.js`)
 
 ## Files
 
-- `index.html`, `about.html`, `projects.html`, `contact.html`: the four pages
+- `index.html`, `about.html`, `projects.html`, `contact.html`: the main pages
+- `project-1.html`, `project-2.html`: the project pages
 - `style.css`: the design, shared by every page
 - `script.js`: the day counter on the Home page
 
